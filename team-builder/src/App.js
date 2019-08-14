@@ -1,6 +1,6 @@
 import React, { useState, } from 'react';
 import MemberForms from './components/MemberForm';
-import Members from './components/members';
+import teamMembers from './components/teamMembers';
 
 
 import './App.css';
@@ -11,8 +11,8 @@ function App() {
   return (
     <div className="App">
       <h1>Team Builder</h1>
-      <MemberForm /> //Build
-      <Members /> //Build
+      <MemberForm /> 
+      <teamMembers /> 
     </div>
   );
 }

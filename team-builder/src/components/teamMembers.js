@@ -1,4 +1,4 @@
-const teamsMembers = [
+const teamMembers = [
     {
         
         "Name": "Jason Voorhees",
@@ -7,3 +7,5 @@ const teamsMembers = [
     },
     
 ];
+
+export default teamMembers;

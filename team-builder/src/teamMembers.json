@@ -1,0 +1,9 @@
+const teamsMembers = [
+    {
+        
+        "Name": "Jason Voorhees",
+        "email": "jvkillah@getsome.com",
+        "role": "Troubleshooter"
+    },
+    
+];

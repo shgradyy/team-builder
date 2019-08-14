@@ -5,7 +5,7 @@ const MemberForm = props => {
     console.log(props);
     const [member, setMember] = useState({ name: "", email: "", role: ""});
 
-    const changeHandle = event => {
+    const changeHandler = event => {
         setMember({ ...member, [event.target.name]: event.target.value });
     };
 
@@ -20,21 +20,38 @@ const MemberForm = props => {
 
 
     return (
-        <form>
-            <label htmlFor="name" hidden>
+        <form onSubmit={submitForm}>
+            <label htmlFor="Name">
                 Member Name
             </label>
             <input
-                id="name"
                 type="text"
                 name="name"
                 placeholder="Enter Name Here"
-                onChange={event => {
-                    console.log(event.target.value);
-                    SVGFEDistantLightElement(event.target.value);
-                }}
-        
-        </form>
+                value={member.name}
+                onChange={changeHandler}
+            />
+            <label htmlFor="email">
+                Enter Email
+            </label>
+            <input
+                type="email"
+                name="email"
+                placeholder="Type Email"
+                value={member.email}
+                onChange={changeHandler}
+            />
+            <label htmlFor="role">
+                Member Role
+            </label>
+            <input
+                type="text"
+                name="role"
+                placeholder="Enter Role Here"
+                value={member.role}
+                onChange={changeHandler}
+            />
+        />
     )
 }
    

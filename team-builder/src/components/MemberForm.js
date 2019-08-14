@@ -9,7 +9,7 @@ const MemberForm = props => {
         setMember({ ...member, [event.target.name]: event.target.value });
     };
 
-    const submetForm = event => {
+    const submitForm = event => {
         event.preventDefault();
         const newMember = {
             ...member,
@@ -51,8 +51,10 @@ const MemberForm = props => {
                 value={member.role}
                 onChange={changeHandler}
             />
-        />
-    )
+        </form>
+      
+        
+    );
 }
    
   
